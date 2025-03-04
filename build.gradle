@@ -1,6 +1,3 @@
-
-
-
 dependencies {
-    api project(':sm_com.arianesline.cavelib.api')
+    api project(':com.arianesline.cavelib.api')
 }
