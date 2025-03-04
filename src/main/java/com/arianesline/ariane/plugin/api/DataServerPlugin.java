@@ -1,0 +1,26 @@
+package com.arianesline.ariane.plugin.api;
+
+import com.arianesline.cavelib.api.CaveSurveyInterface;
+import javafx.beans.property.StringProperty;
+import javafx.scene.image.Image;
+
+import java.io.File;
+
+
+public interface DataServerPlugin extends Plugin {
+
+    File getSurveyFile();
+
+    void setSurveyFile(File file);
+
+    StringProperty getCommandProperty();
+
+    CaveSurveyInterface getSurvey();
+
+    void setSurvey(CaveSurveyInterface survey);
+
+    void showUI();
+
+    Image getIcon();
+
+}
