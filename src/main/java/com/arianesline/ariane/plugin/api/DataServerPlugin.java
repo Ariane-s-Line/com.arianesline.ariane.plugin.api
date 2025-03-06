@@ -2,6 +2,7 @@ package com.arianesline.ariane.plugin.api;
 
 import com.arianesline.cavelib.api.CaveSurveyInterface;
 import javafx.beans.property.StringProperty;
+import javafx.scene.Node;
 import javafx.scene.image.Image;
 
 import java.io.File;
@@ -20,6 +21,8 @@ public interface DataServerPlugin extends Plugin {
     void setSurvey(CaveSurveyInterface survey);
 
     void showUI();
+
+    Node getUINode();
 
     Image getIcon();
 
