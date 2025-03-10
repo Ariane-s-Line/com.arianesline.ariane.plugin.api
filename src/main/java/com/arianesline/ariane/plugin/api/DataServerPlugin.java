@@ -6,9 +6,11 @@ import javafx.scene.Node;
 import javafx.scene.image.Image;
 
 import java.io.File;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public interface DataServerPlugin extends Plugin {
+    AtomicBoolean getLock();
 
     File getSurveyFile();
 
