@@ -10,7 +10,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 
 public interface DataServerPlugin extends Plugin {
-    AtomicBoolean getLock();
 
     File getSurveyFile();
 
