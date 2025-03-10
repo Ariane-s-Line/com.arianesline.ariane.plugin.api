@@ -1,5 +1,5 @@
 package com.arianesline.ariane.plugin.api;
 
 public enum DataServerCommands {
-     LOAD,SAVE
+     LOAD, DONE, SAVE
 }
