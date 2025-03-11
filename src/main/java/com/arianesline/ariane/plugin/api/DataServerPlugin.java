@@ -27,4 +27,6 @@ public interface DataServerPlugin extends Plugin {
 
     Image getIcon();
 
+    void closeUI();
+
 }
