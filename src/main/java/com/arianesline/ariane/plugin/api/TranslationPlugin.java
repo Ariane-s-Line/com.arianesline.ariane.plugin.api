@@ -5,11 +5,9 @@ import java.util.Locale;
 
 public interface TranslationPlugin extends Plugin {
 
-    String ACTIVATED_TRANSLATION = "ActivatedTranslation";
+  String ACTIVATED_TRANSLATION = "ActivatedTranslation";
 
-    String getTranslation(String text, Locale locale);
+  String getTranslation(String text, Locale locale);
 
-    List<Locale> getSupportedLanguages();
-
-
+  List<Locale> getSupportedLanguages();
 }

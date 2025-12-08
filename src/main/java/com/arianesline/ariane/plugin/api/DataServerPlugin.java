@@ -1,37 +1,34 @@
 package com.arianesline.ariane.plugin.api;
 
 import com.arianesline.cavelib.api.CaveSurveyInterface;
+import java.io.File;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.StringProperty;
 import javafx.scene.Node;
 import javafx.scene.image.Image;
 
-import java.io.File;
-import java.util.concurrent.atomic.AtomicBoolean;
-
-
 public interface DataServerPlugin extends Plugin {
 
-    File getSurveyFile();
+  File getSurveyFile();
 
-    void setSurveyFile(File file);
+  void setSurveyFile(File file);
 
-    default BooleanProperty getDirtyProperty(){
-        return new SimpleBooleanProperty();
-    }
-    StringProperty getCommandProperty();
+  default BooleanProperty getDirtyProperty() {
+    return new SimpleBooleanProperty();
+  }
 
-    CaveSurveyInterface getSurvey();
+  StringProperty getCommandProperty();
 
-    void setSurvey(CaveSurveyInterface survey);
+  CaveSurveyInterface getSurvey();
 
-    void showUI();
+  void setSurvey(CaveSurveyInterface survey);
 
-    Node getUINode();
+  void showUI();
 
-    Image getIcon();
+  Node getUINode();
 
-    void closeUI();
+  Image getIcon();
 
+  void closeUI();
 }

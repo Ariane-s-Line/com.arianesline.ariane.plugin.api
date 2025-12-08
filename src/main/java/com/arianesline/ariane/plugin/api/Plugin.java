@@ -2,15 +2,15 @@ package com.arianesline.ariane.plugin.api;
 
 public interface Plugin {
 
-    static final StringBuilder containerVersion=new StringBuilder();
+  static final StringBuilder containerVersion = new StringBuilder();
 
-    default PluginInterface getInterfaceType(){
-        return PluginInterface.NONE;
-    }
-    String getName();
+  default PluginInterface getInterfaceType() {
+    return PluginInterface.NONE;
+  }
 
-    PluginType getType();
+  String getName();
 
-    void showSettings();
+  PluginType getType();
+
+  void showSettings();
 }
-
