@@ -5,4 +5,5 @@ module com.arianesline.ariane.plugin.api {
   requires transitive javafx.graphics;
   requires transitive javafx.base;
   requires transitive javafx.fxml;
+  requires java.logging;
 }
