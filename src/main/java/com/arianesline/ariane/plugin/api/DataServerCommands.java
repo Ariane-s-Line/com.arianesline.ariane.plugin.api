@@ -7,5 +7,7 @@ public enum DataServerCommands {
   NEW,
   REDRAW,
   SAVE_AS_TML,
-  SAVE_AS_JSON
+  SAVE_AS_JSON,
+  LOAD_AGR,
+  SAVE_AGR
 }

@@ -1,5 +1,6 @@
 package com.arianesline.ariane.plugin.api;
 
+import com.arianesline.cavelib.api.AggregationInterface;
 import com.arianesline.cavelib.api.CaveSurveyInterface;
 import java.io.File;
 import javafx.beans.property.BooleanProperty;
@@ -23,6 +24,12 @@ public interface DataServerPlugin extends Plugin {
   CaveSurveyInterface getSurvey();
 
   void setSurvey(CaveSurveyInterface survey);
+
+  default AggregationInterface getAggregation() {
+    return null;
+  }
+
+  default void setAggregation(AggregationInterface aggregation) {}
 
   void showUI();
 
