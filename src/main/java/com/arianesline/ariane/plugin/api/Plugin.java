@@ -12,5 +12,9 @@ public interface Plugin {
 
   PluginType getType();
 
+  default boolean hasSettingsUI() {
+    return false;
+  }
+
   void showSettings();
 }
